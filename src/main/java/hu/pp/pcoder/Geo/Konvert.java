@@ -15,11 +15,6 @@ import java.util.List;
 public class Konvert {
 
     /**
-     * Föld sugara méterben
-     */
-    int R = 6372800;
-
-    /**
      * <h1>DEG --> RAD</h1>
      * Fokból radián
      *

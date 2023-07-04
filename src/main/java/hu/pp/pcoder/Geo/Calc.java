@@ -15,7 +15,7 @@ public class Calc {
     /**
      * Föld sugara méterben
      */
-    private int R = 6372800;
+    private final int R = 6372800;
     
     
     /**

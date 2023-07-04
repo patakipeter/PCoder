@@ -52,9 +52,7 @@ public class CRC {
      */
     public static byte[] crc16CCIT(byte[] adatBe, int alapErtekHex, int xorPolinomHex, boolean kisendian) {
         //int ret = 0;
-        int maszk = 0x8000;
         int crc = alapErtekHex;
-        int tmp;
 
         for (int b : adatBe) {
             for (int i = 0; i < 8; i++) {

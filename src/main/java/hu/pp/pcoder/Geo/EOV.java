@@ -47,6 +47,7 @@ public class EOV {
     /**
      * <h1>EOV --> WGS84</h1>
      * EOV koordinátákból WGS84 kordináta konvertálása.
+     * Pataki Péter v2
      *
      * @param EOVY - EOV Y koordináta lebegőpontosan (double)
      * @param EOVX - EOV X koordináta lebegőpontosan (double)
@@ -63,7 +64,8 @@ public class EOV {
      * <h1>WGS84 --> EOV</h1>
      * WGS84 koordinátából konvertál EOV koordinátákat a bemenen meghatározott
      * paramétereknek megfelelően és visszaed a listát, ami az EOV koordinátákat
-     * tartalmazza
+     * tartalmazza.
+     * Pataki Péter v1
      *
      * @param lat - szélesség fokban lebegőpontosan (double)
      * @param lon - hosszúság fokban lebegőpontosan (double)
@@ -79,7 +81,8 @@ public class EOV {
     
     /**
      * <h1>EOV koordinátákból HD72 vetületre leképezése.</h1>
-     *
+     * Pataki Péter v1
+     * 
      * @param EOVY - EOV Y koordináta lebegőpontosan (double)
      * @param EOVX - EOV X koordináta lebegőpontosan (double)
      * @return HD72 koordináták listája (List&lt;Double&gt; típusként)
@@ -120,6 +123,7 @@ public class EOV {
     
     /**
      * <h1>HD72 koordinátákból EOV leképezése.</h1>
+     * Pataki Péter v1
      *
      * @param LAT - szélesség fokban lebegőpontosan (double)
      * @param LON - hosszúság fokban lebegőpontosan (double)
@@ -156,11 +160,12 @@ public class EOV {
      * <p>
      * 3 paraméter az eltolási, 3 az elforgatási tag, és a fennmaradó 1 az
      * alapelipszoidok közötti nagyítási tényezõ. </p>
+     * Pataki Péter v3
      *
      * @param FI - fi érték fokban lebegőpontosan (double)
      * @param LAMBDA - labda értéke fokban lebegőpontosan (double)
      * @param MAGASSÁG - magasság méterben lebegőpontosan (double)
-     * @param p2 paraméterliszta
+     * @param p2 paraméterlista
      * @param p3 paraméterlista
      * @return WGS84 koordináták listája (List&lt;Double&gt; típusként)
      */
