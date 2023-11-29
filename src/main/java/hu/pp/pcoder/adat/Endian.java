@@ -15,7 +15,7 @@ public class Endian {
      * @param adatBe
      * @return
      */
-    static byte[] littleIntToBig(int adatBe) {
+    public static byte[] littleIntToBig(int adatBe) {
         int bufferMeret = (String.valueOf(adatBe).length()) / 2;
         byte[] ret = new byte[bufferMeret];
         for (int i = 0; i < bufferMeret; i++) {

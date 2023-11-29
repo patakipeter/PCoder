@@ -67,7 +67,7 @@ public class INT {
      * @param adatBe
      * @return
      */
-    static byte[] intToByteArray(int adatBe) {
+    public static byte[] intToByteArray(int adatBe) {
         return HEX.hexStringToByteArray(intToHexString(adatBe));
     }
 

@@ -18,7 +18,7 @@ public class CRC {
      * @param kisendian - boolean, kisendián bájtsorrendű legyen-e a kimenet
      * @return
      */
-    public static byte[] crc16IBM(byte[] adatBe, int alapErtekHex, int xorPolinomHex, boolean kisendian) {
+    byte[] crc16IBM(byte[] adatBe, int alapErtekHex, int xorPolinomHex, boolean kisendian) {
         int maszk = 0x01;
         int crc = alapErtekHex;
         int tmp;
@@ -50,7 +50,7 @@ public class CRC {
      * @param kisendian - boolean, kisendián bájtsorrendű legyen-e a kimenet
      * @return
      */
-    public static byte[] crc16CCIT(byte[] adatBe, int alapErtekHex, int xorPolinomHex, boolean kisendian) {
+    public byte[] crc16CCIT(byte[] adatBe, int alapErtekHex, int xorPolinomHex, boolean kisendian) {
         //int ret = 0;
         int crc = alapErtekHex;
 
